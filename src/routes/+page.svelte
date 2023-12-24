@@ -9,7 +9,7 @@ import contact from '$lib/images/contact.jpg';
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </svelte:head>
 
 <section>
@@ -28,19 +28,19 @@ import contact from '$lib/images/contact.jpg';
 
 
 <div class="container2 V5AUxf fadeIn delay">
-	<div class="text-frame right-margin" onclick="transition('new_background', 'images/coding.jpg', 'other_pages/study.html');">
+	<div class="text-frame" onclick="transition('new_background', 'images/coding.jpg', 'other_pages/study.html');">
 		<h1 class="frame-text">צרו קשר</h1>
 		<img src={contact} alt="contact">
 	</div>
 	<div class="text-frame">
-		<h1 class="frame-text">פרוייקטים/השיגים</h1>
+		<h1 class="frame-text">השיגים</h1>
 		<img src={projects} alt="projects">
 	</div>
 	<div class="text-frame" onclick="transition('new_background', 'images/gaming-engine.webp', 'test')">
 		<h1 class="frame-text">?איך לומדים</h1>
 		<img src={learn} alt="learning">
 	</div>
-	<div class="text-frame left-margin">
+	<div class="text-frame">
 		<h1 class="frame-text">התלמידים</h1>
 		<img src={students} alt="students">
 	</div>

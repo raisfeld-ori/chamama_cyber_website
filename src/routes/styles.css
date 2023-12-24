@@ -3,11 +3,11 @@
 
 :root {
     --fadeTime: 1;
-    --largerTime: 1s;
-    --scaleSize: 1.2;
+    --largerTime: 0.4s;
+    --scaleSize: 1.05;
     --copyrightTime: 1s;
     --show_menu: 1s;
-    --background: url(images/home-HF_GA-1920x1080-CYBERSECU.gif);
+    --background: none;
 }
 
 body {
@@ -154,22 +154,25 @@ button::before{
 }
 .container2 {
   position: relative;
+
+  padding-left: 10px;
   overflow: hidden;
-  display: grid;
+  min-width: calc(25svw + 300px);
+  display: inline-flex;
   grid-template-columns:0fr 0fr 0fr 0fr;
   grid-template-rows:max-content;
   align-items: center;
-  width: 100%;
   justify-content:space-between;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
 }
 .text-frame {
   position: relative;
-  background-color: #80808030;
+  background-color: #80808000;
+  margin-right: 30px;
   border: 1px solid #ccc;
   border-radius: 15px;
   height: 35vh;
-  width: 25vh;
+  width: 25h;
   text-decoration: none;
   user-select: none;
   cursor: pointer;
@@ -178,6 +181,8 @@ button::before{
   margin-bottom: 10%;
   transition: transform var(--largerTime) ease-in-out;
 }
+
+
 .text-frame:hover {
   transform: scale(var(--scaleSize));
 }
@@ -187,7 +192,32 @@ button::before{
   object-fit: cover;
   object-position: 50% 50%;
 }
-
+@media screen and (max-width: 600px) {
+  .container2 {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 10%;
+  }
+  .text-frame {
+    height: 30vh;
+    width: 20vh;
+  }
+  .text-frame img {
+    width: 20vh;
+    height: 22vh;
+    object-position: 50% 50%;
+  }
+  .frame-text {
+    margin-top: 3vh;
+    font-size: 3vh;
+  }
+  .left-margin {
+    margin-left: 0;
+  }
+  .right-margin {
+    margin-right: 0;
+  }
+ }
 .background-frame{
   position: absolute;
   z-index: 3;
