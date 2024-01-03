@@ -11,25 +11,30 @@
 
 
 <style>
-      .navbar {
-          overflow: hidden;
-          background-color: #1c6ee8;
-          border-radius: 10px;
-          width: 50%;
-          height: 2000%;
-          margin: 0 auto;
-      }
+.navbar {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   overflow: hidden;
+   background-color: #1c6ee8;
+   border-radius: 10px;
+   width: 60%;
+   margin: 0 auto;
+}
 
-      .navbar a {
-          float: left;
-          display: block;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-      }
+.navbar a {
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
 
-      .navbar a:hover {
-          color: var(--background);
-      }
+.navbar a:hover {
+   color: var(--background);
+}
+
+/*if the screen is too small, increse the size of the navbar*/
+@media screen and (max-width: 800){.navbar {width: 80%;}}
+
 </style>
