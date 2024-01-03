@@ -10,9 +10,8 @@
 	<a href="https://www.chamama.org" target="_blank" class="hamama-phone"><img src={logo} alt="chamama"></a>
 	<div class="box" id="colorBox">מרחב להתפתחות אישית ויזמות מקיימת</div>
 	<h1 id="head" class="fadeIn">!ברוכים הבאים</h1>
-	<p id="head" class="fadeIn">זה הדף למגמת מחשבים וללמידה שבתוכו</p>
 	<!--items are: 'name': 'url'-->
-	<Navbar  items={{'צרו קשר': 'b', 'תלמידים': 'b', 'למידה': 'b', 'השיגים': 'b'}}/>
+	<Navbar  items={{'צרו קשר': 'b', 'תלמידים': 'students', 'למידה': 'b', 'השיגים': 'b', 'עמוד ראשי': '/'}}/>
 	</div>
 	<main>
 		<slot />
