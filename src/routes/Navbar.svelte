@@ -36,6 +36,8 @@
  .navbar a:hover {
    color: var(--background);
  }
+
+
  
  /*if the screen is too small, increase the size of the navbar*/
  @media screen and (max-width: 800){.navbar {width: 80%;}}
