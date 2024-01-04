@@ -10,6 +10,8 @@
     --background: none;
 }
 
+ /*cant code rn im mewing (the root is not working)*/
+
 body {
     background: var(--background);
     background-color: #2e2d28;
@@ -140,7 +142,7 @@ button::before{
     }
 }
 .delay {
-  animation-delay: 1s;
+  animation-delay: 0.15s;
 }
 
 .V5AUxf {
@@ -488,3 +490,4 @@ button::before{
     width: 100%;
   }
 }
+
