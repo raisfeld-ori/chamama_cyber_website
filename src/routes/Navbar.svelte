@@ -5,7 +5,7 @@
  
  <nav class="navbar">
     {#each Object.entries(items) as [item, url]}
-     <a href={url} aria-current={$page.path === url ? 'page' : ''}>{item}</a>
+     <a href={url} aria-current={$page.url.pathname.startsWith('/' + url) || $page.url.pathname == url ? 'page' : ''}>{item}</a>
     {/each}
  </nav>
  
@@ -18,7 +18,7 @@
    background-color: #1c6ee8;
    border-radius: 10px;
    width: 60%;
-   margin: 0 auto;
+   margin: 10px auto;
  }
  
  .navbar a[aria-current="page"] {

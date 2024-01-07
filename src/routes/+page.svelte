@@ -16,15 +16,15 @@ import contact from '$lib/images/contact.jpg';
 
 <body class="container">
 <div class="container2 V5AUxf fadeIn delay">
-	<div class="text-frame" onclick="transition('new_background', 'images/coding.jpg', 'other_pages/study.html');">
+	<div class="text-frame">
 		<h1 class="frame-text">צרו קשר</h1>
 		<img src={contact} alt="contact">
 	</div>
 	<div class="text-frame">
-		<h1 class="frame-text">השיגים</h1>
+		<h1 class="frame-text">תוצרים</h1>
 		<img src={projects} alt="projects">
 	</div>
-	<div class="text-frame" onclick="transition('new_background', 'images/gaming-engine.webp', 'test')">
+	<div class="text-frame">
 		<h1 class="frame-text">?איך לומדים</h1>
 		<img src={learn} alt="learning">
 	</div>

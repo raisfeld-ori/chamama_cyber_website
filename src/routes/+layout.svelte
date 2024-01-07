@@ -9,9 +9,8 @@
 	<div class="fadeIn" style="line-height: 1svh;">
 	<a href="https://www.chamama.org" target="_blank" class="hamama-phone"><img src={logo} alt="chamama"></a>
 	<div class="box" id="colorBox">מרחב להתפתחות אישית ויזמות מקיימת</div>
-	<h1 id="head" class="fadeIn">!ברוכים הבאים</h1>
 	<!--items are: 'name': 'url'-->
-	<Navbar  items={{'צרו קשר': 'b', 'תלמידים': 'students', 'למידה': 'b', 'השיגים': 'b', 'עמוד ראשי': '/'}}/>
+	<Navbar  items={{'צרו קשר': 'https://www.chamama.org/contactus', 'תלמידים': 'students', 'למידה': 'feature_not_bug', 'תוצרים': 'b', 'עמוד ראשי': '/'}}/>
 	</div>
 	<main>
 		<slot />
