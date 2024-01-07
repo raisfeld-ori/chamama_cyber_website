@@ -25,8 +25,10 @@ import contact from '$lib/images/contact.jpg';
 		<img src={projects} alt="projects">
 	</div>
 	<div class="text-frame">
+		<a href="/learning" style="text-decoration: none; color: inherit;">
 		<h1 class="frame-text">?איך לומדים</h1>
 		<img src={learn} alt="learning">
+		</a>
 	</div>
 	<div class="text-frame">
 		<a href="/students" style="text-decoration: none; color: inherit;">

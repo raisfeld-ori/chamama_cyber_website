@@ -10,7 +10,8 @@
 	<a href="https://www.chamama.org" target="_blank" class="hamama-phone"><img src={logo} alt="chamama"></a>
 	<div class="box" id="colorBox">מרחב להתפתחות אישית ויזמות מקיימת</div>
 	<!--items are: 'name': 'url'-->
-	<Navbar  items={{'צרו קשר': 'https://www.chamama.org/contactus', 'תלמידים': 'students', 'למידה': 'feature_not_bug', 'תוצרים': 'b', 'עמוד ראשי': '/'}}/>
+	<Navbar  items={{'צרו קשר': 'https://www.chamama.org/contactus', 'תלמידים': 'students', 'למידה': 'learning', 'תוצרים': 'products', 
+	'עמוד ראשי': '/'}}/>
 	</div>
 	<main>
 		<slot />

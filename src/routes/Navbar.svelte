@@ -22,7 +22,7 @@
  }
  
  .navbar a[aria-current="page"] {
-  color: red;
+  color: rgba(255, 251, 0, 0.877);
  }
  
  .navbar a {
