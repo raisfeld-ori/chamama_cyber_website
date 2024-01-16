@@ -1,7 +1,7 @@
 <script>
-import learn from '$lib/images/learning1.png';  
+import learn from '$lib/images/projects.jpg';  
 import students from '$lib/images/students.jpeg'; 
-import projects from '$lib/images/projects.jpg';
+import projects from '$lib/images/ikigai.png';
 import contact from '$lib/images/contact.jpg';  
 </script>
 

@@ -15,14 +15,14 @@
    justify-content: center;
    flex-wrap: wrap;
    overflow: hidden;
-   background-color: #1c6ee8;
+   background-color: rgb(0, 132, 255);
    border-radius: 10px;
    width: 60%;
    margin: 10px auto;
  }
  
  .navbar a[aria-current="page"] {
-  color: rgba(255, 251, 0, 0.877);
+  color: rgba(255, 238, 0, 0.877);
  }
  
  .navbar a {

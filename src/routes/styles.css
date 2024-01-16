@@ -13,14 +13,15 @@
  /*cant code rn im mewing (the root is not working)*/
 
 body {
-    background: var(--background);
-    background-color: #2e2d28;
+  background-image: url('/background.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     font-family: 'Secular One', sans-serif;
     font-size: calc(1svh + 1svw + 5px);
     align-content:center;
     text-align: center;
+    background-color: #313131;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -262,7 +263,7 @@ button::before{
   margin: 0 auto;
   width: 400px;
   height: 23px;
-  background-color: #004daa;
+  background-color: #008cff;
   color: rgb(232, 230, 227);
   cursor: pointer;
   transition: background-color 0.3s;
@@ -274,7 +275,7 @@ button::before{
   border-radius: 5px;
 }
 .box:hover {
-  background-color: #00acd7; /* Color when hovered */
+  background-color: #044fc0; /* Color when hovered */
 }
 
 @font-face {
