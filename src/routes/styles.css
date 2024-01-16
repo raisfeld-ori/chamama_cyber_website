@@ -14,21 +14,21 @@
 
 body {
   background-image: url('/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-family: 'Secular One', sans-serif;
-    font-size: calc(1svh + 1svw + 5px);
-    align-content:center;
-    text-align: center;
-    background-color: #313131;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    min-height: 100vh;
-    user-select: none;
-    overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Secular One', sans-serif;
+  font-size: calc(1svh + 1svw + 5px);
+  align-content:center;
+  text-align: center;
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 100vh;
+  user-select: none;
+  overflow: hidden;
 }
 
 #container {
