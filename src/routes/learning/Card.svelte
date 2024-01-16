@@ -1,26 +1,24 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
     export let image;
     export let text;
     export let header;
-    export let next = false;
-    export let previous = false;
-    let visible = true;
-    const showNext = createEventDispatcher();
+    let current = 0;
+    let final = true;
+    let start = true;
+    function next(){if (current < text.length){current += 1;}}
+    function previous(){if (current > 0){current -= 1;}}
 </script>
 
-{#if visible}
 <div>
-    <img class="image" src={image} alt="projects">
-    <p class="texthead">{header}</p>
-    <p class="text">{text}</p>
+    <img class="image" src={image[current]} alt="projects">
+    <p class="texthead">{header[current]}</p>
+    <p class="text">{text[current]}</p>
 </div>
 
 <div class="button-container">
-    <button on:click={() =>{showNext()}} style={next ? '' : 'display: none;'} class="button-77">המשך</button>
-    <button on:click={() =>{showNext()}} style={previous ? '' : 'display: none;'} class="button-77">חזרה</button>
+    <button on:click={next} style={final ? '' : 'display: none;'} class="button-77">המשך</button>
+    <button on:click={previous} style={start ? '' : 'display: none;'} class="button-77">חזרה</button>
 </div>
-{/if}
 <style>
     .text{
         color: rgb(0, 162, 255);
