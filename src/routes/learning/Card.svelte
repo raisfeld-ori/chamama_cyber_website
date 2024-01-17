@@ -15,7 +15,7 @@
 </script>
 
 <div>
-    <img class="image" src={image[current]} alt="projects">
+    <img class="image" src={image[current]}>
     <p class="texthead">{header[current]}</p>
     <p class="text">{text[current]}</p>
 </div>
