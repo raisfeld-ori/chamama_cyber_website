@@ -3,10 +3,15 @@
     export let text;
     export let header;
     let current = 0;
-    let final = true;
+    let final = false;
     let start = true;
-    function next(){if (current < text.length){current += 1;}}
-    function previous(){if (current > 0){current -= 1;}}
+
+    function update(){
+      if (current == 0){start = true;} else {start = false;}
+      if (current == text.length - 1) {final = true;} else {final = false;}
+    }
+    function next(){if (current < text.length - 1){current += 1;update();}}
+    function previous(){if (current > 0){current -= 1;update();}}
 </script>
 
 <div>
@@ -16,8 +21,8 @@
 </div>
 
 <div class="button-container">
-    <button on:click={next} style={final ? '' : 'display: none;'} class="button-77">המשך</button>
-    <button on:click={previous} style={start ? '' : 'display: none;'} class="button-77">חזרה</button>
+    <button on:click={next} style={final ? 'display: none;' : ''} class="button-77">המשך</button>
+    <button on:click={previous} style={start ? 'display: none;' : ''} class="button-77">חזרה</button>
 </div>
 <style>
     .text{
@@ -25,6 +30,7 @@
         margin: 0; 
         padding-left: 10px;
         font-size: 0.8em;
+        user-select: text;
     }
     .texthead{
         color: rgb(0, 123, 223);
@@ -33,9 +39,8 @@
     }
     .image {
         float: left;
-        width: 50%;
+        width: calc(20svh + 20svw + 10px);
         border-radius: 10%;
-        height: auto;
         margin-left: 4svh;
     }
     .button-77 {
