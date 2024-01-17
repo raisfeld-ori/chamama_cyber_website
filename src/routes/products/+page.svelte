@@ -1,3 +1,6 @@
 <script>
-    // there's nothing here
+    import Card from './Card.svelte';
+
 </script>
+
+<Card />
