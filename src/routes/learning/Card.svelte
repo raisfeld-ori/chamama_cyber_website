@@ -26,22 +26,25 @@
 </div>
 <style>
     .text{
-        color: rgb(0, 162, 255);
-        margin: 0; 
-        padding-left: 10px;
-        font-size: 0.8em;
-        user-select: text;
+      position: static;
+      color: rgb(0, 162, 255);
+      margin: 0; 
+      padding-left: 10px;
+      font-size: 0.7em;
+      user-select: text;
     }
     .texthead{
-        color: rgb(0, 123, 223);
-        margin-top: 10svh;
-        padding-top: 1svh;
+      position: static;
+      color: rgb(0, 123, 223);
+      margin-top: 10svh;
+      padding-top: 1svh;
     }
     .image {
-        float: left;
-        width: calc(20svh + 20svw + 10px);
-        border-radius: 10%;
-        margin-left: 4svh;
+      position: static;
+      float: left;
+      width: calc(22vh + 30svw + 15px);
+      border-radius: 10%;
+      margin-left: 4svh;
     }
     .button-77 {
         align-items: center;
