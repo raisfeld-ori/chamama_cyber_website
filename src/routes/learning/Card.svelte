@@ -15,22 +15,22 @@
 </script>
 
 <div>
-    <img class="image" src={image[current]}>
+    <img class="image" src={image[current]} alt="projects">
     <p class="texthead">{header[current]}</p>
     <p class="text">{text[current]}</p>
 </div>
-
 <div class="button-container">
-    <button on:click={next} style={final ? 'display: none;' : ''} class="button-77">המשך</button>
-    <button on:click={previous} style={start ? 'display: none;' : ''} class="button-77">חזרה</button>
+  <button on:click={next} style={final ? 'display: none;' : ''} class="button-77">המשך</button>
+  <button on:click={previous} style={start ? 'display: none;' : ''} class="button-77">חזרה</button>
 </div>
+
 <style>
     .text{
       position: static;
       color: rgb(0, 162, 255);
       margin: 0; 
       padding-left: 10px;
-      line-height: 2;
+      line-height: 1em;
       font-size: 0.8em;
       user-select: text;
     }
@@ -39,6 +39,7 @@
       color: rgb(0, 123, 223);
       margin-top: 10svh;
       padding-top: 1svh;
+      font-size: initial;
     }
     .image {
       position: static;
