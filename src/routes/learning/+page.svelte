@@ -27,4 +27,3 @@
  </script>
  
  <Card image={[projects, chamama, chamama]} {text} header={[`?איך אנחנו לומדים`, `הלמידה בשנה ראשונה`, 'הלמידה בשנה שנייה']} />
- 

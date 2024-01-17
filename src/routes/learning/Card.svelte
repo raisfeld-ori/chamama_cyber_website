@@ -1,7 +1,7 @@
 <script>
-    export let image;
-    export let text;
-    export let header;
+    export let image = [];
+    export let text = [];
+    export let header = [];
     let current = 0;
     let final = false;
     let start = true;
@@ -16,9 +16,9 @@
 </script>
 
 
-<div>
-  <img class="image" src={image[current]} alt="projects">
+<div class="card">
     <p class="texthead">{header[current]}</p>
+    <img class="image" src={image[current]} alt="projects">
     <p class="text">{text[current]}</p>
 </div>
 
@@ -28,13 +28,16 @@
     <button on:click={previous} style={start ? 'display: none;' : ''} class="button-77">חזרה</button>
 </div>
 <style>
+  :root{--scroll: scroll;}
 .text {
    position: static;
+   display: inline-block;
    color: rgb(0, 162, 255);
-   margin: 0; 
+   margin: 0;
    padding-left: 10px;
    font-size: 0.7em;
    user-select: text;
+   margin-top: 2svh;
    white-space: pre-wrap;
 }
 .texthead{
@@ -46,10 +49,9 @@
 }
 .image {
    position: static;
-   float: left;
-   width: calc(22vh + 30svw + 15px);
+   width: calc(20vh + 20svw + 10px);
    border-radius: 10%;
-   margin-left: 4svh;
+   margin-left: 4svw;
 }
     .button-77 {
         align-items: center;
@@ -88,10 +90,10 @@
         z-index: 0;
 }
 
-@media (min-width: 768px) {
-  .button-77 {
-    padding: 19px 52px;
-  }
+@media (min-width: 778px) {
+  .button-77 {padding: 19px 52px;}
+  .image{float:left;}
+  .texthead{margin-top: 0;padding-top: 0;}
 }
 
 .button-77:before,
