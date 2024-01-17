@@ -30,7 +30,8 @@
       color: rgb(0, 162, 255);
       margin: 0; 
       padding-left: 10px;
-      font-size: 0.7em;
+      line-height: 2;
+      font-size: 0.8em;
       user-select: text;
     }
     .texthead{

@@ -3,4 +3,4 @@
 
 </script>
 
-<Card />
+<h1>products here:</h1>
