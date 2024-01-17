@@ -1,7 +1,7 @@
 <script>
-    export let image = [];
-    export let text = [];
-    export let header = [];
+    export let image;
+    export let text;
+    export let header;
     let current = 0;
     let final = false;
     let start = true;
@@ -12,42 +12,45 @@
     }
     function next(){if (current < text.length - 1){current += 1;update();}}
     function previous(){if (current > 0){current -= 1;update();}}
+    
 </script>
 
+
 <div>
-    <img class="image" src={image[current]} alt="projects">
+  <img class="image" src={image[current]} alt="projects">
     <p class="texthead">{header[current]}</p>
     <p class="text">{text[current]}</p>
 </div>
-<div class="button-container">
-  <button on:click={next} style={final ? 'display: none;' : ''} class="button-77">המשך</button>
-  <button on:click={previous} style={start ? 'display: none;' : ''} class="button-77">חזרה</button>
-</div>
 
+
+<div class="button-container">
+    <button on:click={next} style={final ? 'display: none;' : ''} class="button-77">המשך</button>
+    <button on:click={previous} style={start ? 'display: none;' : ''} class="button-77">חזרה</button>
+</div>
 <style>
-    .text{
-      position: static;
-      color: rgb(0, 162, 255);
-      margin: 0; 
-      padding-left: 10px;
-      line-height: 1em;
-      font-size: 0.8em;
-      user-select: text;
-    }
-    .texthead{
-      position: static;
-      color: rgb(0, 123, 223);
-      margin-top: 10svh;
-      padding-top: 1svh;
-      font-size: initial;
-    }
-    .image {
-      position: static;
-      float: left;
-      width: calc(22vh + 30svw + 15px);
-      border-radius: 10%;
-      margin-left: 4svh;
-    }
+.text {
+   position: static;
+   color: rgb(0, 162, 255);
+   margin: 0; 
+   padding-left: 10px;
+   font-size: 0.7em;
+   user-select: text;
+   white-space: pre-wrap;
+}
+.texthead{
+   position: static;
+   color: rgb(0, 123, 223);
+   margin-top: 10svh;
+   padding-top: 1svh;
+   clear: both;
+}
+.image {
+   position: static;
+   float: left;
+   width: calc(22vh + 30svw + 15px);
+   border-radius: 10%;
+   margin-left: 4svh;
+}
     .button-77 {
         align-items: center;
         appearance: none;
