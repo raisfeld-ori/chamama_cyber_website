@@ -1,6 +1,5 @@
 <script>
-    import Card from './Card.svelte';
-
+    import Product from './Product.svelte';
 </script>
 
-<h1>products here:</h1>
+<Product name="משהו" description="">something</Product>

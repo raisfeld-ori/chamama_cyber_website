@@ -14,8 +14,6 @@
         `
         Consequat aliquip excepteur dolor cupidatat eu tempor amet sint laborum culpa.
         Et velit exercitation aliqua sunt pariatur aliqua ipsum enim reprehenderit et sunt cillum sint sit.
-        Eu quis voluptate ad duis non fugiat quis exercitation. Duis nostrud culpa elit dolor enim anim cillum ex qui minim non.
-        Officia Lorem ex consequat nulla ut veniam nulla Lorem occaecat laboris nulla. Et ullamco ea dolore exercitation reprehenderit sint esse qui reprehenderit ex et.
         `,
         `
         Sunt laborum culpa ipsum mollit do in tempor officia minim officia anim excepteur ut nulla.
