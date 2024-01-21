@@ -1,2 +1,9 @@
-<h1>student's pages: </h1>
+<script>
+    import learn from '$lib/images/projects.jpg';  
+    import students from '$lib/images/students.jpeg'; 
+    import projects from '$lib/images/ikigai.png';
+    import contact from '$lib/images/contact.jpg';
+    import Students from './Students.svelte';  
+</script>
 
+<Students names={["joe", "biden", "is"]} urls={['https://www.chamama.org']} images={[]} />

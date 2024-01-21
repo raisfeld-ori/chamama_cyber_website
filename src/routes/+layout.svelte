@@ -11,7 +11,7 @@
 	<div class="box" id="colorBox">מרחב להתפתחות אישית ויזמות מקיימת</div>
 	<!--items are: 'name': 'url'-->
 	<Navbar  items={{'לאתר הראשי': 'https://www.chamama.org', 'תלמידים': 'students', 'למידה': 'learning', 'תוצרים': 'products', 
-	'הנדסת תוכנה': 'development','עמוד ראשי': '/'}}/>
+	'בית תוכנה': 'development','עמוד ראשי': '/'}}/>
 	</div>
 	<main>
 		<slot />
