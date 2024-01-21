@@ -3,6 +3,7 @@ import learn from '$lib/images/projects.jpg';
 import students from '$lib/images/students.jpeg'; 
 import projects from '$lib/images/ikigai.png';
 import contact from '$lib/images/contact.jpg';
+import development from '$lib/images/development.png';
 </script>
 
 <svelte:head>
@@ -21,12 +22,12 @@ import contact from '$lib/images/contact.jpg';
 		<img src={contact} alt="contact">
 	</div>
 	<div class="text-frame">
-		<a href="/students" style="text-decoration: none; color: inherit;">
+		<a href="/products" style="text-decoration: none; color: inherit;">
 		<h1 class="frame-text">תוצרים</h1>
 		<img src={projects} alt="projects">
 	</div>
 	<div class="text-frame">
-		<a href="/students">
+		<a href="/learning">
 		<h1 class="frame-text">?איך לומדים</h1>
 		<img src={learn} alt="learning">
 		</a>
@@ -38,9 +39,9 @@ import contact from '$lib/images/contact.jpg';
 		</a>
 	</div>
 	<div class="text-frame">
-		<a href="/students" style="text-decoration: none; color: inherit;">
+		<a href="/development" style="text-decoration: none; color: inherit;">
 			<h1 class="frame-text">בית תוכנה</h1>
-			<!-- img src={students} alt="students" -->
+			<img src={development} alt="development">
 		</a>
 	</div>
 </div>
