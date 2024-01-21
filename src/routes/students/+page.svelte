@@ -6,4 +6,4 @@
     import Students from './Students.svelte';  
 </script>
 
-<Students names={["joe", "biden", "is"]} urls={['https://www.chamama.org']} images={[]} />
+<Students names={["אוריי", "אביב", "איתמר"]} urls={['sigma', "delta", "beta"]} images={[students, learn, projects]} />

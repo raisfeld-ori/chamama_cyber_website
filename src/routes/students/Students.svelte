@@ -6,9 +6,11 @@
 
 <div class="container2 V5AUxf fadeIn delay">
     {#each {length: names.length} as _, i}
-        <a href={urls[i]}>
-        <h1>{names[i]}</h1>
-        <img src={images[i]}>
-        </a>
+    <div class="text-frame">
+		<a href={urls[i]} style="text-decoration: none; color: inherit;">
+			<h1 class="frame-text">{names[i]}</h1>
+			<img src={images[i]} alt="" />
+		</a>
+	</div>
     {/each}
 </div>
