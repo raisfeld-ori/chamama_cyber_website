@@ -7,7 +7,7 @@ import development from '$lib/images/development.png';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>עמוד ראשי</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </svelte:head>
 
@@ -38,12 +38,6 @@ import development from '$lib/images/development.png';
 			<img src={students} alt="students">
 		</a>
 	</div>
-	<div class="text-frame">
-		<a href="/development" style="text-decoration: none; color: inherit;">
-			<h1 class="frame-text">בית תוכנה</h1>
-			<img src={development} alt="development">
-		</a>
-	</div>
 </div>
 
 	<footer id="copyright">
@@ -52,4 +46,8 @@ import development from '$lib/images/development.png';
 	</footer>
 </body>
 
-<style>a{text-decoration: none; color: inherit;}</style>
+<style>
+a{text-decoration: none; color: inherit;}
+:root{--scroll: hidden;}
+
+</style>

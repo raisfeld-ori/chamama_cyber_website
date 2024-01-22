@@ -28,7 +28,6 @@
     <button on:click={previous} style={start ? 'display: none;' : ''} class="button-77">חזרה</button>
 </div>
 <style>
-  :root{--scroll: scroll;}
 .text {
    position: static;
    display: inline-block;
