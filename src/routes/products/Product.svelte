@@ -3,7 +3,11 @@
   export let url;
   export let text = "";
   export let image;
-  export let button;
+  
+  export let name2 = "";
+  export let url2;
+  export let text2 = "";
+  export let image2;
 </script>
 
 <a href={url}>
@@ -16,9 +20,18 @@
   </div>
 </a>
 
-<style>
+<a href={url2}>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; ">
+      <img class="image" src={image2} alt=""/>
+      <div>
+          <h2 class="texthead2">{name2}</h2>
+          <p class="text">{text2}</p>
+      </div>
+  </div>
+</a>
 
-:root{--scroll: scroll;}
+<style>
+  :root{--scroll: scroll;}
 
    .text {
    position: static;
@@ -42,8 +55,8 @@
 .texthead2{
    position: static;
    color: rgb(0, 123, 223);
-
    clear: both;
+
    font-size: 1.2em;
    }
 .image {
@@ -53,6 +66,7 @@
    margin-left: 4svw;
 }
     .button-77 {
+      margin-top: 2svh;
         align-items: center;
         appearance: none;
         background-clip: padding-box;

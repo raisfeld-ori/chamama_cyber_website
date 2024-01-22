@@ -12,9 +12,21 @@
 <button class="button-77">sigmagrindet</button>
 </div>
 
+<div>
+<Product name2="raisfeld encrypter"/>
+<Product image2={ai} text2="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
+</div>
+<div>
+    <button class="button-77">DOMAINEXANSION</button>
+    </div>
+
 <style>
   :root{--scroll: scroll;}
-
+  
+  a {
+  transition: 0.5s ease-in-out;
+  scroll-behavior: smooth;
+}
   .text {
    position: static;
    display: inline-block;
