@@ -40,10 +40,6 @@ import development from '$lib/images/development.png';
 	</div>
 </div>
 
-	<footer id="copyright">
-		<div> 09-7884549 | Info@chamama.org - ליצירת קשר | Visit@chamama.org - לביקורים</div>
-        <div>תיכון החממה - עמל הוד השרון | חרש 9 הוד השרון | ס.מ 775064</div>
-	</footer>
 </body>
 
 <style>

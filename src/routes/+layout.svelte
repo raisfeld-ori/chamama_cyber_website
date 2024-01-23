@@ -5,7 +5,7 @@
 </script>
 
 <div class="app">
-	<img id="new_background" src={logo} style="display: none;" alt="">
+	<img class="new_background" src={logo} style="display: none;" alt="">
 	<div class="fadeIn" style="line-height: 1svh;">
 	<a href="https://www.chamama.org" target="_blank" class="hamama-phone"><img src={logo} alt="chamama"></a>
 	<div class="box" id="colorBox">מרחב להתפתחות אישית ויזמות מקיימת</div>
@@ -19,3 +19,7 @@
 	<footer>
 	</footer>
 </div>
+
+<style>
+
+</style>

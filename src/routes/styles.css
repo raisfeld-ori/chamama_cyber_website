@@ -158,19 +158,21 @@ button::before{
 }
 .container2 {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   padding-left: 10px;
   overflow: hidden;
   min-width: calc(25svw + 300px);
   display: inline-flex;
-  grid-template-columns:0fr 0fr 0fr 0fr;
-  grid-template-rows:max-content;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content:space-between;
   margin-bottom: 20%;
 }
 .text-frame {
   position: relative;
+  grid-column: span 1;
   background-color: #80808000;
   margin-right: 30px;
   border: 1px solid #ccc;
@@ -198,9 +200,9 @@ button::before{
 }
 @media screen and (max-width: 600px) {
   .container2 {
-    width: 100%;
-    padding-left: 0;
-    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 6svw;
   }
   .text-frame {
     height: 30vh;
@@ -459,10 +461,10 @@ button::before{
   }
   .text-frame {
     height: 25vh;
-    width: 12vh;
+    width: 16vh;
   }
   .text-frame img {
-    width: 13vh;
+    width: 16vh;
     height: 20vh;
     object-position: 45% 50%;
   }

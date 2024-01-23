@@ -1,44 +1,33 @@
 <script>
     import Product from './Product.svelte';
     import ai from '$lib/images/ai.png';
+    import compiler from '$lib/images/wierdcompiler.png';
 </script>
 
 <h1 class="texthead">תוצרים של מגמת ההייטק</h1>
 <div>
 <Product name="raisfeld encrypter"/>
-<Product image={ai} text="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
+<Product image={compiler} text="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
 </div>
 <div>
-<button class="button-77">sigmagrindet</button>
+<button class="button-77">..עוד מידע</button>
 </div>
 
 <div>
-<Product name2="raisfeld encrypter"/>
-<Product image2={ai} text2="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
+<Product name2="AI Model (Hakaton)"/>
+<Product image2={ai} text2="AI Model made for the [example] association in the purpose of supporting their association website."/>
 </div>
-<div>
-    <button class="button-77">DOMAINEXANSION</button>
+<div style="padding-top: 4svh;">
+    <button class="button-77">Not Defined</button>
     </div>
+
+    <h1 class="texthead">...</h1>
 
 <style>
   :root{--scroll: scroll;}
-  
-  a {
-  transition: 0.5s ease-in-out;
-  scroll-behavior: smooth;
-}
-  .text {
-   position: static;
-   display: inline-block;
-   color: rgb(0, 162, 255);
-   margin: 0;
-   padding-left: 10px;
-   
-   font-size: 0.7em;
-   user-select: text;
-   margin-top: 2svh;
-   white-space: pre-wrap;
-}
+
+
+
 .texthead{
    position: static;
    color: rgb(0, 123, 223);
@@ -47,20 +36,7 @@
    clear: both;
    font-size: 1.6em;
 }
-.texthead2{
-   position: static;
-   color: rgb(0, 123, 223);
-   margin-top: 10svh;
-   padding-top: 1svh;
-   clear: both;
-   font-size: 1.2em;
-   }
-.image {
-   position: static;
-   width: calc(20vh + 20svw + 10px);
-   border-radius: 10%;
-   margin-left: 4svw;
-}
+
     .button-77 {
         align-items: center;
         appearance: none;
@@ -100,7 +76,6 @@
 
 @media (min-width: 1098px   ) {
   .button-77 {padding: 19px 52px;}
-  .image{float:left;}
   .texthead{margin-top: 0;padding-top: 0;}
 }
 
