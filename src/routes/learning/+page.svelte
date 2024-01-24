@@ -32,8 +32,4 @@
     ];
  </script>
  
-<<<<<<< HEAD
  <Card image={[projects, chamama, chamama]} {text} header={[`?איך אנחנו לומדים`, `הלמידה בשנה ראשונה`, 'הלמידה בשנה שנייה']} />
-=======
- <Card image={[projects, prj, finish]} {text} header={[`?איך אנחנו לומדים`, `פרוייקטים`, 'מגמות ותעודת מקצוע']}/>
->>>>>>> 8ed8d25 (I ABOUT TO FINISHHH)
