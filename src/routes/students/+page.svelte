@@ -18,6 +18,7 @@
 <Students names={["אורייז", "אביב", "איתמר", "אשל"]} urls={['https://www.linkedin.com/in/ori-raisfeld-422392264/', "delta", "https://www.linkedin.com/in/ariel-elkaslasi-1b6769299/"]} images={[studentimg, sigma, ariel, topg]} />
 
 <style>
+  :root{--scroll: scroll;}
     .texthead{
    position: static;
    color: rgb(0, 123, 223);

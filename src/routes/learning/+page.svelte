@@ -1,6 +1,8 @@
 <script>
     import projects from '$lib/images/projects.jpg';
+    import prj from '$lib/images/prj.jpg';
     import chamama from '$lib/images/chamama.png'
+    import finish from '$lib/images/finish.png'
     import Card from './Card.svelte';
     
     let text = [
@@ -16,12 +18,22 @@
         Et velit exercitation aliqua sunt pariatur aliqua ipsum enim reprehenderit et sunt cillum sint sit.
         `,
         `
-        Sunt laborum culpa ipsum mollit do in tempor officia minim officia anim excepteur ut nulla.
-        Anim aliquip adipisicing labor veniam ipsum ad nulla ullamco cupidatat qui.
-        Eiusmod sunt qui irure enim est consectetur deserunt duis sit mollit eiusmod laboris est id.
-        Consectetur cillum dolor duis enim labore proident excepteur
-        `
+            ,בבית ספרנו יש 2 מגמות קיימות כרגע הייטק ומייקרס
+            על מנת לסיים את הלימודים בבית ספר עם תעודת גמר ותעודת מקצוע
+            התלמידים צריכים לסיים 3 שלבים למגמה וכול סיום שלב התלמיד מקבל סיכה
+            ,במגמת ההייטק כדי להשיג סיכה ראשונה יש ללמוד תחומי ליבה במדעי המחשב 
+            על מנת להשיג סיכה שנייה צריכים ללמוד ולעבור קורסים מקצועיים לפי המקצוע במדעי המחשב לבחרתך
+            ...כמו סייבר דאטא בניית אתרים וכו
+            בשנה שלישית לשנה התלמידים עושים פרוייקט גמר על מנת להשלים את הלימודים של המגמה
+            .הפרוייקט מכיל את מה שהתלמיד למד בקורסים המקצועים שהציעו להם 
+            בזמן הפרוייקט כמו כול פרוייקט המאסטר מדריך אותך כדי שתעמוד בדרישות של הפרוייקט
+            .ובסיום הפרוייקט התלמיד מקבל את תעודת המקצוע שלו
+            `
     ];
  </script>
  
+<<<<<<< HEAD
  <Card image={[projects, chamama, chamama]} {text} header={[`?איך אנחנו לומדים`, `הלמידה בשנה ראשונה`, 'הלמידה בשנה שנייה']} />
+=======
+ <Card image={[projects, prj, finish]} {text} header={[`?איך אנחנו לומדים`, `פרוייקטים`, 'מגמות ותעודת מקצוע']}/>
+>>>>>>> 8ed8d25 (I ABOUT TO FINISHHH)

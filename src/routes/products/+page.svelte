@@ -10,7 +10,9 @@
 <Product image={compiler} text="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
 </div>
 <div>
+    <a href="https://raisfeld.netlify.app">
 <button class="button-77">..עוד מידע</button>
+</a>
 </div>
 
 <div>
@@ -21,7 +23,7 @@
     <button class="button-77">Not Defined</button>
     </div>
 
-    <h1 class="texthead">...</h1>
+    <h1 class="texthead">.עוד מידע</h1>
 
 <style>
   :root{--scroll: scroll;}
@@ -90,7 +92,6 @@
   display: block;
   height: 100%;
   left: 0;
-  overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
@@ -104,7 +105,6 @@
   content: "";
   display: block;
   left: 4px;
-  overflow: hidden;
   position: absolute;
   right: 4px;
   top: 4px;

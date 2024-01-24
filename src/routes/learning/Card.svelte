@@ -53,7 +53,7 @@
     opacity: 0;
     filter: blur(4px);
   }
-
+  
   span:nth-child(1) {
     animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
@@ -145,7 +145,7 @@
    position: static;
    width: calc(20vh + 20svw + 10px);
    border-radius: 10%;
-   margin-left: 4svw;
+   margin-left: 2svw;
 }
     .button-77 {
         align-items: center;
@@ -188,7 +188,12 @@
   .button-77 {padding: 19px 52px;}
   .image{float:left;}
   .texthead{margin-top: 0;padding-top: 0;}
+  span{
+    padding-right: 25px;
+    padding-left: 7px;
+  }
 }
+
 
 .button-77:before,
 .button-77:after {
