@@ -44,6 +44,4 @@ import development from '$lib/images/development.png';
 
 <style>
 a{text-decoration: none; color: inherit;}
-:root{--scroll: hidden;}
-
 </style>

@@ -8,7 +8,6 @@
     --copyrightTime: 1s;
     --show_menu: 1s;
     --background: none;
-    --scroll: hidden;
 }
 
  /*cant code rn im mewing (the root is not working)*/
@@ -29,7 +28,7 @@ body {
   margin: 0;
   min-height: 100vh;
   user-select: none;
-  overflow: var(--scroll);
+  overflow-y: scroll;
 }
 
 #container {
@@ -168,7 +167,6 @@ button::before{
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content:space-between;
-  margin-bottom: 20%;
 }
 .text-frame {
   position: relative;

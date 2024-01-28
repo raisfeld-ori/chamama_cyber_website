@@ -16,20 +16,27 @@
 </div>
 
 <div>
-<Product name2="AI Model (Hakaton)"/>
-<Product image2={ai} text2="AI Model made for the [example] association in the purpose of supporting their association website."/>
+<Product name2="AI Model (Hackathon)"/>
+<Product image2={ai} text2="מודל בינה מלכויתית שנוצר במהלך יום לימודים מיוחד בבית ספר של 24 שעות כדי לתמוך באנשים מפונים לאחר שעזבו את ביתם בגלל ה7 באוקטובר"/>
 </div>
 <div style="padding-top: 4svh;">
-    <button class="button-77">Not Defined</button>
+  <a href="https://www.chamama.org/newsletter">
+    <button class="button-77">...עוד מידע</button>
+    </a>
     </div>
+<div>
+<Product name="raisfeld encrypter"/>
+<Product image={compiler} text="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
+</div>
+<div>
+    <a href="https://raisfeld.netlify.app">
+<button class="button-77">..עוד מידע</button>
+</a>
+</div>
 
-    <h1 class="texthead">.עוד מידע</h1>
+
 
 <style>
-  :root{--scroll: scroll;}
-
-
-
 .texthead{
    position: static;
    color: rgb(0, 123, 223);
