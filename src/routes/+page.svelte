@@ -50,7 +50,6 @@ import development from '$lib/images/development.png';
 	</div>
 </div>
 
-
 <style>
 a{text-decoration: none; color: inherit;}
 </style>

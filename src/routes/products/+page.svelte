@@ -205,6 +205,6 @@
      .textinfo:hover {
       color: #0062ff;
       text-decoration: underline;
-      scale: 1.02;
+      scale: 1.052;
      }
 </style>

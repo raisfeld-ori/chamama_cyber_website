@@ -27,7 +27,10 @@
 </div>
 
 <style>
-
+    .texthead{
+   position: static;
+   color: rgb(0, 123, 223);
+	}
 .topright{
     position: absolute;
     right: 0;

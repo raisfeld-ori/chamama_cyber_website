@@ -17,9 +17,9 @@
 
 
 <div class="card">
-    <p class="texthead">{header[current]}</p>
-    <img class="image" src={image[current]} alt="projects">
-    <p class="text"><span>{text[current]}</span></p>
+  <p class="texthead">{header[current]}</p>
+  <img class="image" src={image[current]} alt="projects">
+  <p class="text"><span>{text[current]}</span></p>
 </div>
 
 
@@ -29,18 +29,17 @@
 </div>
 <style>
 .text {
-  position: static;
-     display: inline-block;
-     color: rgb(0, 162, 255);
-
-     padding-left: 10px;
-     padding-right: 10px;
-     font-size: 0.7em;
-     user-select: text;
-     margin-top: 2svh;
-     white-space: pre-wrap;
-     transform: scale(0.94);
-      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+   position: static;
+   display: inline-block;
+   color: rgb(0, 162, 255);
+   margin: 0;
+   padding-left: 10px;
+   font-size: 0.7em;
+   user-select: text;
+   margin-top: 2svh;
+   white-space: pre-wrap;
+   transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -133,7 +132,6 @@
       filter: blur(0);
     }
   }
-    
 
 .texthead{
    position: static;
@@ -254,15 +252,6 @@
   cursor: default;
   opacity: .24;
 }
-@media screen and (max-width: 600px) {
-     .text{
-      font-size: 0.8em;
-      white-space: unset;
-     }
-     .image{
-      margin-left: 0svw;
-      width: calc(20vh + 25svw + 20px);
-     }
-     :root{--scroll: scroll;}
-  }
+
+
 </style>
