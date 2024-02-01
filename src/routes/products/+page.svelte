@@ -2,7 +2,21 @@
     import Product from './Product.svelte';
     import ai from '$lib/images/ai.png';
     import compiler from '$lib/images/wierdcompiler.png';
+    import calculator from '$lib/images/calculator.png';
+
+    import { onMount } from 'svelte';
+
+
+    let scroll_allowed = false;
+    onMount(() => {
+      scroll_allowed = true;
+    })
+    
 </script>
+<svelte:head>
+	<title>עמוד תוצרים</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</svelte:head>
 
 <h1 class="texthead">תוצרים של מגמת ההייטק</h1>
 <div>
@@ -34,16 +48,47 @@
 </a>
 </div>
 
+<div>
+<Product name="Calculator Ariel.Cal"/>
+<Product image={calculator} text=" מחשבון בסיסי שנוצר בעזרת השפת תכנות פייתון כדי למדוד את היכולות של התלמיד בשפת התכנות ולצבור ניסיון הכנת אפליקציות"/>
+</div>
+<div>
+    <a href="d">
+<button class="button-77">..עוד מידע</button>
+</a>
+</div>
 
+<div>
+  <a href="https://www.chamama.org/newsletter">
+  <p class="textinfo">לעוד מידע על פרוייקטים שעושים בבית הספר נא ללחוץ כאן</p>
+</a>
+</div>
 
+{#if scroll_allowed}
+  <style>:root{--scroll: visible;}</style>
+{/if}
 <style>
-.texthead{
-   position: static;
-   color: rgb(0, 123, 223);
-   margin-top: 10svh;
-   padding-top: 1svh;
-   clear: both;
-   font-size: 1.6em;
+
+.texthead {
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0556ed, #009dff, #0062ff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 
     .button-77 {
@@ -143,4 +188,23 @@
   cursor: default;
   opacity: .24;
 }
+
+.textinfo {
+     position: static;
+     display: inline-block;
+     color: rgb(0, 162, 255);
+     margin: 0;
+     padding-left: 10px;
+     padding-right: 20px;
+     font-size: 0.7em;
+     user-select: text;
+     margin-top: 5svh;
+     margin-bottom: 2svh;
+     white-space: pre-wrap;}
+
+     .textinfo:hover {
+      color: #0062ff;
+      text-decoration: underline;
+      scale: 1.02;
+     }
 </style>

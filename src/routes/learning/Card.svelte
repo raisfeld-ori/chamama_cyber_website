@@ -52,6 +52,7 @@
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
+    margin-bottom: 60px;
   }
   
   span:nth-child(1) {
@@ -184,7 +185,7 @@
         z-index: 0;
 }
 
-@media (min-width: 778px) {
+@media (min-width: 1078px) {
   .button-77 {padding: 19px 52px;}
   .image{float:left;}
   .texthead{margin-top: 0;padding-top: 0;}
@@ -192,6 +193,7 @@
     padding-right: 25px;
     padding-left: 7px;
   }
+
 }
 
 

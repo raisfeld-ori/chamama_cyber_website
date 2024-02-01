@@ -4,6 +4,13 @@ import students from '$lib/images/students.jpeg';
 import projects from '$lib/images/ikigai.png';
 import contact from '$lib/images/contact.jpg';
 import development from '$lib/images/development.png';
+    import { onMount } from 'svelte';
+
+	let scroll_allowed = false;
+    onMount(() => {
+      scroll_allowed = true;
+    })
+
 </script>
 
 <svelte:head>
@@ -15,7 +22,10 @@ import development from '$lib/images/development.png';
 
 </section>
 
-<body class="container">
+{#if scroll_allowed}
+  <style>:root{--scroll: hidden;}</style>
+{/if}
+
 <div class="container2 V5AUxf fadeIn delay">
 	<div class="text-frame">
 		<h1 class="frame-text">צרו קשר</h1>
@@ -40,7 +50,6 @@ import development from '$lib/images/development.png';
 	</div>
 </div>
 
-</body>
 
 <style>
 a{text-decoration: none; color: inherit;}

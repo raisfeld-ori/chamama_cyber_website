@@ -8,6 +8,7 @@
     --copyrightTime: 1s;
     --show_menu: 1s;
     --background: none;
+    --scroll: hidden;
 }
 
  /*cant code rn im mewing (the root is not working)*/
@@ -28,7 +29,7 @@ body {
   margin: 0;
   min-height: 100vh;
   user-select: none;
-  overflow-y: scroll;
+  overflow-y: var(--scroll);
 }
 
 #container {
@@ -198,9 +199,21 @@ button::before{
 }
 @media screen and (max-width: 600px) {
   .container2 {
+    margin-left: 10vw;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 6svw;
+    grid-template-columns: 2fr 4fr;
+    min-width: 0px;
+    min-height: 63vh;
+    }
+    
+  body{
+    background-position: 1px;
+    min-height: 1px;
+
+  }
+
+  .navbar{
+    width: 80%;
   }
   .text-frame {
     height: 30vh;
