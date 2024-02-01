@@ -24,7 +24,7 @@
 </svelte:head>
 <div>
 <h1 class="texthead">Linkedin</h1>
-<Students names={["אורייז", "אביב", "איתמר", "אשל"]} urls={['https://www.linkedin.com/in/ori-raisfeld-422392264/', 'https://www.linkedin.com/in/ori-raisfeld-422392264/', "https://www.linkedin.com/in/ariel-elkaslasi-1b6769299/"]} images={[studentimg, sigma, ariel, topg]} />
+<Students names={["אורי", "אביב", "איתמר", "אשל"]} urls={['https://www.linkedin.com/in/ori-raisfeld-422392264/', 'https://www.linkedin.com/in/ori-raisfeld-422392264/', "https://www.linkedin.com/in/ariel-elkaslasi-1b6769299/"]} images={[studentimg, sigma, ariel, topg]} />
 </div>
 
 
