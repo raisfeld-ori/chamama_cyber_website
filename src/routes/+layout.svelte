@@ -21,9 +21,6 @@
 	<main>
 		<slot />
 	</main>
-
-	<footer>
-	</footer>
 </div>
 
 <style>
