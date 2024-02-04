@@ -34,6 +34,10 @@ body {
   overflow-y: var(--scroll);
 }
 
+div#responsible {
+  overflow-y: hidden;
+}
+
 #container {
   transition: padding-top 0.5s ease;
 }
@@ -184,8 +188,7 @@ button::before{
   user-select: none;
   cursor: pointer;
   overflow: hidden;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5svh;
   transition: transform var(--largerTime) ease-in-out;
 }
 

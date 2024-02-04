@@ -32,11 +32,26 @@
   <style>:root{--scroll: hidden;}</style>
 {/if}
 <style>
-  :root{--scroll: scroll;}
-    .texthead{
-   position: static;
-   color: rgb(0, 123, 223);
 
-   clear: both;
+.texthead {
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0556ed, #009dff, #0062ff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 </style>

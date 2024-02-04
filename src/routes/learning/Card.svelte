@@ -184,6 +184,7 @@
 }
 
 @media (min-width: 1078px) {
+
   .button-77 {padding: 19px 52px;}
   .image{float:left;}
   .texthead{margin-top: 0;padding-top: 0;}

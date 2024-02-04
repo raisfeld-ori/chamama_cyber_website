@@ -52,8 +52,22 @@
  <Card image={[projects, prj, finish]} {text} header={[`?איך אנחנו לומדים`, `פרוייקטים`, 'מגמות ותעודת מקצוע']}/>
 
  {#if scroll_allowed}
-  <style>:root{--scroll: scroll;}</style>
+  <style>:root{--scroll: hidden;}</style>
 {/if}
+
+{#if scroll_allowed}
+  <style>
+    :root {
+      --scroll: visible;
+    }
+
+    body {
+      max-height: 1000px; /* Adjust this value to your desired maximum scroll height */
+      overflow-y: auto;
+    }
+  </style>
+{/if}
+
 <style>
     
  </style>

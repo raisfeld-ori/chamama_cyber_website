@@ -8,7 +8,7 @@ import development from '$lib/images/development.png';
 
 	let scroll_allowed = false;
     onMount(() => {
-      scroll_allowed = true;
+      scroll_allowed = false;
     })
 
 </script>
@@ -23,7 +23,7 @@ import development from '$lib/images/development.png';
 </section>
 
 {#if scroll_allowed}
-  <style>:root{--scroll: scroll;}</style>
+  <style>:root{--scroll: hidden;}</style>
 {/if}
 
 <div class="container2 V5AUxf fadeIn delay">

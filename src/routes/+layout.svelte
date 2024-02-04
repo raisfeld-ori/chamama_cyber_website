@@ -6,6 +6,8 @@
 
 
 </script>
+<body>
+	
 
 <div class="app">
 	<img class="topright" src={discord}  alt="Meaningful description">
@@ -22,6 +24,7 @@
 		<slot />
 	</main>
 </div>
+</body>
 
 <style>
     .texthead{
@@ -33,7 +36,7 @@
     right: 0;
     top: 0;
     display: block;
-    height: 100px;
+    height: auto;
     width:100px;
     text-indent: -999em;
     text-decoration: none;
