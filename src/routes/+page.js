@@ -3,8 +3,3 @@
 export const prerender = true;
 
 
-
-export function load({ params }) {
-    console.log()
-    return {content: 'something'};
-}
