@@ -23,7 +23,7 @@ import development from '$lib/images/development.png';
 </section>
 
 {#if scroll_allowed}
-  <style>:root{--scroll: hidden;}</style>
+  <style>:root{--scroll: scroll;}</style>
 {/if}
 
 <div class="container2 V5AUxf fadeIn delay">

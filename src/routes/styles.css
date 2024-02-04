@@ -16,6 +16,8 @@
 body {
   background-image: url('/background.jpg');
   background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
   background-position: center;
   background-size: cover;
   font-family: 'Secular One', sans-serif;
@@ -209,7 +211,8 @@ button::before{
   body{
     background-position: 1px;
     min-height: 1px;
-
+    height: 100%;
+    overflow: scroll;
   }
 
   .navbar{

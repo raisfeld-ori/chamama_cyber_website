@@ -52,7 +52,7 @@
  <Card image={[projects, prj, finish]} {text} header={[`?איך אנחנו לומדים`, `פרוייקטים`, 'מגמות ותעודת מקצוע']}/>
 
  {#if scroll_allowed}
-  <style>:root{--scroll: hidden;}</style>
+  <style>:root{--scroll: scroll;}</style>
 {/if}
 <style>
     
