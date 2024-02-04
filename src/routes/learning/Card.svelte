@@ -149,6 +149,7 @@
     .button-77 {
         align-items: center;
         appearance: none;
+        font-family: 'Secular One', sans-serif;
         background-clip: padding-box;
         background-color: initial;
         background-image: none;
@@ -159,7 +160,6 @@
         display: inline-block;
         flex-direction: row;
         flex-shrink: 0;
-        font-family: Eina01,sans-serif;
         font-size: 16px;
         font-weight: 800;
         justify-content: center;

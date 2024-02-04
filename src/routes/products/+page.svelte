@@ -104,7 +104,8 @@
         display: inline-block;
         flex-direction: row;
         flex-shrink: 0;
-        font-family: Eina01,sans-serif;
+        font-family: 'Secular One', sans-serif;
+
         font-size: 16px;
         font-weight: 800;
         justify-content: center;
