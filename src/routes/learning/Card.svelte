@@ -51,7 +51,7 @@
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
   
   span:nth-child(1) {
