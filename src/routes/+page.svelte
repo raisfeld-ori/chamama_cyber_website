@@ -8,7 +8,7 @@ import development from '$lib/images/development.png';
 
 	let scroll_allowed = false;
     onMount(() => {
-      scroll_allowed = false;
+      scroll_allowed = true;
     })
 
 </script>

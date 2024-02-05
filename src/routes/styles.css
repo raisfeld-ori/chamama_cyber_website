@@ -16,8 +16,8 @@
 body {
   background-image: url('/background.jpg');
   background-repeat: no-repeat;
+  min-height: 300000000vh;
   height: 100%;
-  overflow: hidden;
   background-position: center;
   background-size: cover;
   font-family: 'Secular One', sans-serif;
@@ -208,14 +208,12 @@ button::before{
     display: grid;
     grid-template-columns: 2fr 4fr;
     min-width: 0px;
-    min-height: 63vh;
     }
     
   body{
     background-position: 1px;
-    min-height: 1px;
+    min-height: 100vh;
     height: 100%;
-    overflow: scroll;
   }
 
   .navbar{
@@ -477,8 +475,8 @@ button::before{
     margin:4svh;
   }
   .text-frame {
-    height: 25vh;
-    width: 16vh;
+    height: 22vh;
+    width: 15vh;
   }
   .text-frame img {
     width: 16vh;

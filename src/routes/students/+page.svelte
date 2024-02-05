@@ -23,8 +23,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </svelte:head>
 <div>
-<h1 class="texthead">Linkedin</h1>
-<Students names={["אורי", "אביב", "איתמר", "אשל"]} urls={['https://www.linkedin.com/in/ori-raisfeld-422392264/', 'https://www.linkedin.com/in/ori-raisfeld-422392264/', "https://www.linkedin.com/in/ariel-elkaslasi-1b6769299/"]} images={[studentimg, sigma, ariel, topg]} />
+<Students names={["Linkedin - אורי", "Linkedin - אביב", "Linkedin -אריאל", "Github - אשל"]} urls={['https://www.linkedin.com/in/ori-raisfeld-422392264/', 'https://www.linkedin.com/in/aviv-segal-7687812a7/', "https://www.linkedin.com/in/ariel-elkaslasi-1b6769299/", "https://github.com/UnmatchedPerspicacious"]} images={[studentimg, sigma, ariel, topg]} />
 </div>
 
 
@@ -33,25 +32,8 @@
 {/if}
 <style>
 
-.texthead {
-  position: relative;
-  font-size: 2em;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #0556ed, #009dff, #0062ff);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 5s linear infinite;
-  -webkit-background-clip: text;
-  background-clip: text;  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
 
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
-}
+
+
+
 </style>
