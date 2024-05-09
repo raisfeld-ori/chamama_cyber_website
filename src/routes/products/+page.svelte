@@ -2,7 +2,21 @@
     import Product from './Product.svelte';
     import ai from '$lib/images/ai.png';
     import compiler from '$lib/images/wierdcompiler.png';
+    import calculator from '$lib/images/calculator.png';
+
+    import { onMount } from 'svelte';
+
+
+    let scroll_allowed = false;
+    onMount(() => {
+      scroll_allowed = true;
+    })
+    
 </script>
+<svelte:head>
+	<title>עמוד תוצרים</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</svelte:head>
 
 <h1 class="texthead">תוצרים של מגמת ההייטק</h1>
 <div>
@@ -10,31 +24,71 @@
 <Product image={compiler} text="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
 </div>
 <div>
+    <a href="https://raisfeld.netlify.app">
 <button class="button-77">..עוד מידע</button>
+</a>
 </div>
 
 <div>
-<Product name2="AI Model (Hakaton)"/>
-<Product image2={ai} text2="AI Model made for the [example] association in the purpose of supporting their association website."/>
+<Product name2="AI Model (Hackathon)"/>
+<Product image2={ai} text2="מודל בינה מלכויתית שנוצר במהלך יום לימודים מיוחד בבית ספר של 24 שעות כדי לתמוך באנשים מפונים לאחר שעזבו את ביתם בגלל ה7 באוקטובר"/>
 </div>
 <div style="padding-top: 4svh;">
-    <button class="button-77">Not Defined</button>
+  <a href="https://www.chamama.org/newsletter">
+    <button class="button-77">...עוד מידע</button>
+    </a>
     </div>
+<div>
+<Product name="raisfeld encrypter"/>
+<Product image={compiler} text="raisfeld encrypter is a free, open source app for encrypting any file, of any size, into your computer. it uses AES (advanced encryption standard) to encrypt the files into a hidden place in your computer."/>
+</div>
+<div>
+    <a href="https://raisfeld.netlify.app">
+<button class="button-77">..עוד מידע</button>
+</a>
+</div>
 
-    <h1 class="texthead">...</h1>
+<div>
+<Product name="Calculator Ariel.Cal"/>
+<Product image={calculator} text=" מחשבון בסיסי שנוצר בעזרת השפת תכנות פייתון כדי למדוד את היכולות של התלמיד בשפת התכנות ולצבור ניסיון הכנת אפליקציות"/>
+</div>
+<div>
+    <a href="d">
+<button class="button-77">..עוד מידע</button>
+</a>
+</div>
 
+<div>
+  <a href="https://www.chamama.org/newsletter">
+  <p class="textinfo">לעוד מידע על פרוייקטים שעושים בבית הספר נא ללחוץ כאן</p>
+</a>
+</div>
+
+{#if scroll_allowed}
+  <style>:root{--scroll: visible;}</style>
+{/if}
 <style>
-  :root{--scroll: scroll;}
 
+.texthead {
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0556ed, #009dff, #0062ff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
 
-
-.texthead{
-   position: static;
-   color: rgb(0, 123, 223);
-   margin-top: 10svh;
-   padding-top: 1svh;
-   clear: both;
-   font-size: 1.6em;
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 
     .button-77 {
@@ -50,7 +104,8 @@
         display: inline-block;
         flex-direction: row;
         flex-shrink: 0;
-        font-family: Eina01,sans-serif;
+        font-family: 'Secular One', sans-serif;
+
         font-size: 16px;
         font-weight: 800;
         justify-content: center;
@@ -90,7 +145,6 @@
   display: block;
   height: 100%;
   left: 0;
-  overflow: hidden;
   position: absolute;
   top: 0;
   width: 100%;
@@ -104,7 +158,6 @@
   content: "";
   display: block;
   left: 4px;
-  overflow: hidden;
   position: absolute;
   right: 4px;
   top: 4px;
@@ -136,4 +189,23 @@
   cursor: default;
   opacity: .24;
 }
+
+.textinfo {
+     position: static;
+     display: inline-block;
+     color: rgb(0, 162, 255);
+     margin: 0;
+     padding-left: 10px;
+     padding-right: 20px;
+     font-size: 0.7em;
+     user-select: text;
+     margin-top: 5svh;
+     margin-bottom: 2svh;
+     white-space: pre-wrap;}
+
+     .textinfo:hover {
+      color: #0062ff;
+      text-decoration: underline;
+      scale: 1.052;
+     }
 </style>

@@ -17,9 +17,9 @@
 
 
 <div class="card">
-    <p class="texthead">{header[current]}</p>
-    <img class="image" src={image[current]} alt="projects">
-    <p class="text"><span>{text[current]}</span></p>
+  <p class="texthead">{header[current]}</p>
+  <img class="image" src={image[current]} alt="projects">
+  <p class="text"><span>{text[current]}</span></p>
 </div>
 
 
@@ -29,18 +29,15 @@
 </div>
 <style>
 .text {
-  position: static;
-     display: inline-block;
-     color: rgb(0, 162, 255);
-
-     padding-left: 10px;
-     padding-right: 10px;
-     font-size: 0.7em;
-     user-select: text;
-     margin-top: 2svh;
-     white-space: pre-wrap;
-     transform: scale(0.94);
-      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+   position: static;
+   display: inline-block;
+   color: rgb(0, 162, 255);
+   margin: 0;
+   font-size: 0.69em;
+   user-select: text;
+   white-space: pre-wrap;
+   transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   }
   @keyframes scale {
     100% {
@@ -48,12 +45,35 @@
     }
   }
 
+  @media (min-width: 878px) {
+    .text { 
+      position: static;
+   display: inline-block;
+   color: rgb(0, 162, 255);
+   margin: 0;
+   padding-left: 10px;
+   font-size: 20px;
+   user-select: text;
+   margin-top: 2svh;
+   white-space: pre-wrap;
+   transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+    }
+  }
+
   span {
     display: inline-block;
     opacity: 0;
     filter: blur(4px);
+    margin-right: 20px;
+    margin-left: 20px;
+
   }
 
+
+
+  
   span:nth-child(1) {
     animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
   }
@@ -132,7 +152,6 @@
       filter: blur(0);
     }
   }
-    
 
 .texthead{
    position: static;
@@ -143,13 +162,14 @@
 }
 .image {
    position: static;
-   width: calc(20vh + 20svw + 10px);
+   width: calc(18vh + 18svw + 14px);
    border-radius: 10%;
-   margin-left: 4svw;
+   margin-left: 2svw;
 }
     .button-77 {
         align-items: center;
         appearance: none;
+        font-family: 'Secular One', sans-serif;
         background-clip: padding-box;
         background-color: initial;
         background-image: none;
@@ -160,7 +180,6 @@
         display: inline-block;
         flex-direction: row;
         flex-shrink: 0;
-        font-family: Eina01,sans-serif;
         font-size: 16px;
         font-weight: 800;
         justify-content: center;
@@ -184,11 +203,20 @@
         z-index: 0;
 }
 
-@media (min-width: 778px) {
+@media (min-width: 1078px) {
+
   .button-77 {padding: 19px 52px;}
   .image{float:left;}
   .texthead{margin-top: 0;padding-top: 0;}
+  span{
+    padding-right: 25px;
+    padding-left: 7px;
+  
+  }
+
+
 }
+
 
 .button-77:before,
 .button-77:after {
@@ -247,15 +275,6 @@
   cursor: default;
   opacity: .24;
 }
-@media screen and (max-width: 600px) {
-     .text{
-      font-size: 0.8em;
-      white-space: unset;
-     }
-     .image{
-      margin-left: 0svw;
-      width: calc(20vh + 25svw + 20px);
-     }
-     :root{--scroll: scroll;}
-  }
+
+
 </style>

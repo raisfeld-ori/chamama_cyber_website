@@ -1,27 +1,63 @@
 <script>
     import projects from '$lib/images/projects.jpg';
+    import prj from '$lib/images/prj.jpg';
     import chamama from '$lib/images/chamama.png'
+    import finish from '$lib/images/finish.png'
     import Card from './Card.svelte';
+    import tag from '$lib/images/tag.jpg'
+
     
-    let text = [
-        `בית ספר החממה זה בית ספר ללמידה אישית
-        לכן במגמה שלנו אנחנו נעזרים בקורסים אונליין ומנטורים כדי ללמוד
-        על מנת להתקדם בלמידה שאנחנו התלמדים רוצים להתקדם בה
-        כול תלמדים במגמה בוחר לבד מה הם רוצים ללמוד
-        !אם זה בניית אתרים, סייבר, הכנת משחקים ועוד
-        כול חודש/חודשיים אנחנו מציגים פרוייקט שמראה מה למדנו בתקופה
-        בעזרת החומר שאנחנו לומדים כול תקופה אנחנו מציגים את היכולות שלנו`,
+    import { onMount } from 'svelte';
+
+	let scroll_allowed = false;
+    onMount(() => {
+      scroll_allowed = true;
+    })
+
+    let text= [
         `
-        Consequat aliquip excepteur dolor cupidatat eu tempor amet sint laborum culpa.
-        Et velit exercitation aliqua sunt pariatur aliqua ipsum enim reprehenderit et sunt cillum sint sit.
+        בית ספר החממה הוא בית ספר ללמידה אישית
+    לכן במגמה שלנו אנו נעזרים בקורסים אונליין ומנטורים כדי ללמוד
+    על מנת להתקדם בלמידה שאנו התלמדים רוצים להתקדם בה
+    כל תלמיד במגמה בוחר לבד מה הם רוצים ללמוד
+    אם זה בניית אתרים, סייבר, הכנת משחקים ועוד
+    כול תלמדים במגמה בוחרים לבד מה הם רוצים ללמוד
+    בכל חודש או חודשיים אנחנו מציגים פרוייקט שמראה מה למדנו בתקופה
+    בעזרת החומר שאנו לומדים כול תקופה אנחנו מציגים את היכולות שלנו`,
+        `
+        כול שנה יש חמישה תקופות לפרוייקטים
+    מיני פרוייקט / תחילת שנה, פרוייקט סתיו, פרוייקט חורף, פרוייקט אביב ולבסוף פרוייקט קיץ
+    כול תקופה של פרוייקט התלמיד משבץ את עצמו למאסטר שיעזור לו למצוא פרוייקט פרוטקטיבי
+    שיעזור לו ללמוד דברים חדשים או להרוויח ממנו
+    תפקיד התלמיד זה למצוא את הפרוייקט שעובר על הדרישות של המאסטר ושהוא אוהב את הרעיון 
+    כול שבוע המאסטר ידריך וידאג שהתלמיד עובד בצורה פרוטקטיבית על הפרוייקט עד לסוף התקופה
         `,
         `
-        Sunt laborum culpa ipsum mollit do in tempor officia minim officia anim excepteur ut nulla.
-        Anim aliquip adipisicing labor veniam ipsum ad nulla ullamco cupidatat qui.
-        Eiusmod sunt qui irure enim est consectetur deserunt duis sit mollit eiusmod laboris est id.
-        Consectetur cillum dolor duis enim labore proident excepteur
-        `
+        בבית הספר שלנו קיימות כרגע 2 מגמות בעלות אפשרות להשגת סיכות ותעודת מקצוע ותעודת גמר בבית ספר
+        מגמת ההייטק ומגמת המייקרז, על מנת להשיג תעודת גמר בבית ספר כול שנה תלמיד צריך לעבור שלב ובסוף השלב הוא מקבל סיכה
+         סך הכול התלמיד צריך להשיג 3 סיכות על מנת לקבל תעודת מקצוע ולהיות עם אפשרות לקבל תועדת גמר בסוף הלימודים
+                `,
+                `
+                
+                כול שנה במגמה שבחרת לעצמך יש אפשרות להשיג סיכה, כדי להשיג סיכה ראשונה
+              יש ללמוד תחומי ליבה במדעי המחשב
+              כדי להשיג סיכה שניה יש לבחור שביל לימודי במדעי המחשב לבחירתך כמו סייבר
+              ועל מנת להשיג סיכה שלישית יש לעשות פרוייקט גמר שיתואם עם המאסטר פרוייקט ברמה גבוהה שמותאם והיה שונה בין כול תלמיד
+                `
     ];
  </script>
+<svelte:head>
+	<title>עמוד למידה</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</svelte:head>
  
- <Card image={[projects, chamama, chamama]} {text} header={[`?איך אנחנו לומדים`, `הלמידה בשנה ראשונה`, 'הלמידה בשנה שנייה']} />
+ <Card image={[projects, prj, finish, tag]} {text} header={[`?איך אנחנו לומדים`, `פרוייקטים`, 'מגמות וסיכות', 'השגת סיכות']}/>
+
+ {#if scroll_allowed}
+  <style>:root{--scroll: hidden;}</style>
+{/if}
+
+
+<style>
+    
+ </style>
